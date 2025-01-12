@@ -1,4 +1,4 @@
-FROM chenlb/alinux3:0.1.1
+FROM --platform=${TARGETPLATFORM:-linux/amd64} chenlb/alinux3:0.1.2
 
 # 安装 python3.11
 RUN yum remove -y python3
